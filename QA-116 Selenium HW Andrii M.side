@@ -1,0 +1,242 @@
+{
+  "id": "3ce0d2f2-f47f-4632-8910-f98418b77774",
+  "version": "2.0",
+  "name": "QA-116",
+  "url": "https://nltu.edu.ua/",
+  "tests": [{
+    "id": "b1d36ff8-a10b-4df0-8f75-fe02d3e95f2b",
+    "name": "rozetka.ua",
+    "commands": [{
+      "id": "42a1e65d-2db7-42ca-a2b7-fe191e0b808b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74451bd6-c0a5-4357-a4af-1c286fe227c0",
+      "comment": "",
+      "command": "store",
+      "target": "Iphone 13",
+      "targets": [],
+      "value": "searchText"
+    }, {
+      "id": "1a9bddb3-fdf2-48f2-a29d-f1f88ba01432",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/app-root/div/div/rz-header/rz-main-header/header/div/div/a",
+      "targets": [
+        ["css=img:nth-child(3)", "css:finder"],
+        ["xpath=//img[@alt='Rozetka Logo']", "xpath:img"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba15a884-89da-4f2b-9cea-fb7043d729e8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.main-goods:nth-child(1) > .ng-star-inserted",
+      "targets": [
+        ["css=.main-goods:nth-child(1) > .ng-star-inserted", "css:finder"],
+        ["xpath=//rz-goods-section", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "404fedeb-e02a-4780-8278-16908232d605",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${searchText}"
+    }, {
+      "id": "c698cc10-8db5-40f3-a71a-0817713a7cf2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button_color_green",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05cab829-6ce7-4b17-bed8-41c011041881",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Apple",
+      "targets": [
+        ["linkText=Apple", "linkText"],
+        ["css=.catalog-selection__item:nth-child(2) > .catalog-selection__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Apple')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/ua/mobile-phones/c80003/series=113074,113077/')]", "xpath:href"],
+        ["xpath=//rz-selected-filters/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Apple')]", "xpath:innerText"]
+      ],
+      "value": "Apple"
+    }]
+  }, {
+    "id": "b7c31caa-d591-4712-a2e1-0fbb48f977ec",
+    "name": "nltu.edu.ua",
+    "commands": [{
+      "id": "3cd1ce19-3e10-4782-9972-907ea5514cc6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c78796d4-b2bc-446f-b9ee-872626d45145",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"sp-breadcrumb\"]/div[1]/div/div/div/ul/li[2]/a",
+      "targets": [
+        ["css=.pathway", "css:finder"],
+        ["xpath=//a[contains(text(),'Головна')]", "xpath:link"],
+        ["xpath=//div[@id='sp-breadcrumb']/div/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/index.php')])[247]", "xpath:href"],
+        ["xpath=//section[2]/div/div/div/div/div/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86c6a74c-9d11-4b83-b1cb-c26b45f856ca",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.pathway",
+      "targets": [
+        ["css=.pathway", "css:finder"],
+        ["xpath=//a[contains(text(),'Головна')]", "xpath:link"],
+        ["xpath=//div[@id='sp-breadcrumb']/div/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/index.php')])[247]", "xpath:href"],
+        ["xpath=//section[2]/div/div/div/div/div/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7172a796-efbc-4bc7-96a5-a1815e83586f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.pathway",
+      "targets": [
+        ["css=.pathway", "css:finder"],
+        ["xpath=//a[contains(text(),'Головна')]", "xpath:link"],
+        ["xpath=//div[@id='sp-breadcrumb']/div/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/index.php')])[247]", "xpath:href"],
+        ["xpath=//section[2]/div/div/div/div/div/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": "ГОЛОВНА"
+    }, {
+      "id": "74fc266b-3c96-44c4-a205-de38eecdfc15",
+      "comment": "",
+      "command": "store",
+      "target": "ГОЛОВНА",
+      "targets": [],
+      "value": "searchText"
+    }, {
+      "id": "2b5ec6f7-8b1d-4a8c-9ea9-265447e3b84a",
+      "comment": "",
+      "command": "open",
+      "target": "https://nltu.edu.ua/index.php/home/rektorat-nd",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ba13a1c-4449-4a4c-8dce-7c6ef4cf2aac",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c28e55d2-177f-41d6-adeb-b5d931fca046",
+    "name": "ukr net",
+    "commands": [{
+      "id": "c7789afe-b028-4c6c-b525-596faf42974c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24ba1bd7-10db-41fb-a088-d36783e68ebe",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-input",
+      "targets": [
+        ["id=search-input", "id"],
+        ["name=q", "name"],
+        ["css=#search-input", "css:finder"],
+        ["xpath=//input[@id='search-input']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "147b4f37-1d88-4184-94e1-9e862c95edbd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form > input:nth-child(2)",
+      "targets": [
+        ["css=.form > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Пошук']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Новини"
+    }, {
+      "id": "32015e59-1795-4f28-8af8-20be9f138c46",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Головне",
+      "targets": [
+        ["linkText=Головне", "linkText"],
+        ["css=.feed__section:nth-child(1) > .feed__section--title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Головне')]", "xpath:link"],
+        ["xpath=//article[@id='feed']/section/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ukr.net/news/main.html')]", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Головне')]", "xpath:innerText"]
+      ],
+      "value": "Головне"
+    }, {
+      "id": "ad431726-4bce-4123-b468-567cab949550",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header__logo > a > img",
+      "targets": [
+        ["css=.header__logo > a > img", "css:finder"],
+        ["xpath=//img[@alt='новини']", "xpath:img"],
+        ["xpath=//main[@id='main']/div[2]/header/section/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5df5ccf2-acb5-4ef1-aa68-73604024452c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"main\"]/div[2]/div/div/div[1]/section[1]/div/div[2]/a[3]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "219c66be-1d5f-4e29-a495-b75d552aa3dc",
+      "comment": "",
+      "command": "open",
+      "target": "xpath=//*[@id=\"8\"]/a[1]",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "91ecbaf6-c9f7-4d8c-a545-820786d3849f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b1d36ff8-a10b-4df0-8f75-fe02d3e95f2b"]
+  }],
+  "urls": ["https://rozetka.com.ua/ua/", "https://nltu.edu.ua/", "https://www.ukr.net/"],
+  "plugins": []
+}
